@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────
+# Datos del periodo académico — EDITAR AQUÍ CADA SEMESTRE
+# Única información que cambia de un semestre a otro. El resto
+# del sitio no depende de este archivo.
+# ─────────────────────────────────────────────────────────────
+
+periodo: "202680"
+nrc: "133"
+codigo: "ELE00316"
+horas: "24"
+docente: "Carlos Duván Páez"
+salon: "Salón 407, Sede 101"
+horario_general: "Sábados, 1:00 p. m. – 5:30 p. m."
+
+sesiones:
+  - numero: 1
+    fecha: "22 de agosto de 2026"
+    dia: "Sábado"
+    hora: "1:00 p. m. – 5:30 p. m."
+    salon: "Salón 407, Sede 101"
+  - numero: 2
+    fecha: "5 de septiembre de 2026"
+    dia: "Sábado"
+    hora: "1:00 p. m. – 5:30 p. m."
+    salon: "Salón 407, Sede 101"
+  - numero: 3
+    fecha: "19 de septiembre de 2026"
+    dia: "Sábado"
+    hora: "1:00 p. m. – 5:30 p. m."
+    salon: "Salón 407, Sede 101"
+  - numero: 4
+    fecha: "3 de octubre de 2026"
+    dia: "Sábado"
+    hora: "1:00 p. m. – 5:30 p. m."
+    salon: "Salón 407, Sede 101"

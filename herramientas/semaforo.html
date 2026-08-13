@@ -1,0 +1,233 @@
+---
+layout: default
+title: Herramienta del Semáforo Intercultural
+---
+
+<h1>Semáforo Intercultural</h1>
+<p class="lede">Herramienta para el análisis crítico de experiencias de salud intercultural — Entrega P2</p>
+
+<div class="callout">
+  Clasifiquen cada experiencia según su <strong>nivel real de transformación del poder</strong> y las relaciones estructurales — no según si "se ve bien" o cuenta con buena intención. El color es un punto de partida, no la respuesta final: ninguna experiencia real es puramente roja o verde, así que cada clasificación debe ir acompañada de al menos un elemento que la contradiga o la complique. Lo que se guarda aquí queda solo en este navegador; al terminar, tomen una captura o copien el resumen para su entrega.
+</div>
+
+<div class="semaforo-legend">
+  <div class="semaforo-chip rojo">
+    <strong>🔴 Rojo — Funcional</strong>
+    <span>Riesgo de cooptación. Solo adapta la biomedicina sin ceder poder.</span>
+  </div>
+  <div class="semaforo-chip amarillo">
+    <strong>🟡 Amarillo — Mixto</strong>
+    <span>Transicional. Participación real, pero limitada por la burocracia.</span>
+  </div>
+  <div class="semaforo-chip verde">
+    <strong>🟢 Verde — Crítico</strong>
+    <span>Transformador. Entrega control real y cambia relaciones de poder.</span>
+  </div>
+</div>
+
+<h2>Sus 3 experiencias de análisis</h2>
+<p class="lede" style="margin-top:-6px;">Pueden ser locales, nacionales o internacionales — incluida su propia micro-intervención en curso.</p>
+
+<div class="semaforo-grid" id="semaforo-grid"></div>
+
+<div class="card" id="resumen-card">
+  <h3>📊 Análisis grupal</h3>
+  <div id="resumen-barra" class="resumen-barra"></div>
+  <div id="resumen-texto" class="resumen-texto muted">Completa la clasificación de las 3 experiencias para ver el análisis grupal.</div>
+</div>
+
+<div class="debate-form-actions" style="margin: 6px 0 30px;">
+  <button class="btn btn-primary" id="btn-guardar-sem">Guardar</button>
+  <button class="btn btn-ghost" id="btn-imprimir-sem">🖨 Imprimir / exportar resumen</button>
+  <button class="btn btn-ghost" id="btn-reset-sem">↺ Borrar todo</button>
+</div>
+
+<style>
+.semaforo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 10px 0 24px; }
+.exp-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px 20px; border-top: 5px solid var(--border); }
+.exp-card.c-rojo { border-top-color: #ef4444; }
+.exp-card.c-amarillo { border-top-color: #f59e0b; }
+.exp-card.c-verde { border-top-color: #10b981; }
+.exp-card label { display: block; font-size: 12.5px; font-weight: 700; color: var(--navy-700); margin: 12px 0 5px; }
+.exp-card label:first-of-type { margin-top: 0; }
+.exp-card input[type="text"], .exp-card textarea, .exp-card select {
+  width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13.5px; font-family: inherit; resize: vertical;
+}
+.exp-card textarea { min-height: 64px; }
+.exp-card label.label-matiz { color: #92400e; }
+.exp-card textarea.needs-matiz { border-color: #f59e0b; background: #fffbeb; }
+.resumen-barra { display: flex; height: 26px; border-radius: 999px; overflow: hidden; margin: 10px 0 14px; background: var(--border); }
+.resumen-barra .seg { transition: width .3s ease; }
+.resumen-barra .seg.rojo { background: #ef4444; }
+.resumen-barra .seg.amarillo { background: #f59e0b; }
+.resumen-barra .seg.verde { background: #10b981; }
+.resumen-texto { font-size: 14px; }
+
+.debate-form-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { border: none; border-radius: 999px; padding: 10px 18px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.btn-primary { background: var(--teal-500); color: var(--navy-900); }
+.btn-primary:hover { background: var(--teal-700); color: #fff; }
+.btn-ghost { background: #fff; color: var(--navy-700); border: 1px solid var(--border); }
+.btn-ghost:hover { background: #f1f5f9; }
+
+@media print {
+  .site-header, .site-footer, .callout, .debate-form-actions { display: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  var STORAGE_KEY = "semaforoTool_interculturalidad";
+  var grid = document.getElementById("semaforo-grid");
+  var placeholders = [
+    { nombre: "Ej: mi micro-intervención piloto", ubicacion: "Comunidad, familia o colectivo elegido" },
+    { nombre: "Ej: Hospital intercultural, Otavalo (Ecuador)", ubicacion: "Ubicación / contexto de referencia" },
+    { nombre: "Ej: Programa de parteras tradicionales", ubicacion: "Ubicación / contexto de referencia" }
+  ];
+
+  function cardHTML(i) {
+    var p = placeholders[i] || placeholders[0];
+    return (
+      '<div class="exp-card" id="card-' + i + '">' +
+        '<label>Nombre de la experiencia</label>' +
+        '<input type="text" id="nombre-' + i + '" placeholder="' + p.nombre + '">' +
+        '<label>Ubicación / contexto</label>' +
+        '<input type="text" id="ubic-' + i + '" placeholder="' + p.ubicacion + '">' +
+        '<label>Descripción breve</label>' +
+        '<textarea id="desc-' + i + '" placeholder="Objetivo, metodología, quién la lidera..."></textarea>' +
+        '<label>Clasificación</label>' +
+        '<select id="clas-' + i + '">' +
+          '<option value="">Seleccionar…</option>' +
+          '<option value="rojo">🔴 Rojo — Funcional</option>' +
+          '<option value="amarillo">🟡 Amarillo — Mixto</option>' +
+          '<option value="verde">🟢 Verde — Crítico</option>' +
+        '</select>' +
+        '<label>Justificación (relaciones de poder)</label>' +
+        '<textarea id="just-' + i + '" placeholder="¿Quién cede o retiene poder en esta experiencia?"></textarea>' +
+        '<label class="label-matiz">⚠️ Matiz: ¿qué la contradice o complica?</label>' +
+        '<textarea id="matiz-' + i + '" placeholder="Ej: aunque cede decisiones en el diagnóstico, el financiamiento y el control final siguen siendo de la institución biomédica..."></textarea>' +
+      '</div>'
+    );
+  }
+
+  for (var i = 0; i < 3; i++) { grid.insertAdjacentHTML("beforeend", cardHTML(i)); }
+
+  var fieldIds = [];
+  for (var i = 0; i < 3; i++) {
+    fieldIds.push("nombre-" + i, "ubic-" + i, "desc-" + i, "clas-" + i, "just-" + i, "matiz-" + i);
+  }
+
+  function updateCardBorder(i) {
+    var sel = document.getElementById("clas-" + i).value;
+    var card = document.getElementById("card-" + i);
+    card.className = "exp-card" + (sel ? " c-" + sel : "");
+  }
+
+  function updateMatizWarning(i) {
+    var sel = document.getElementById("clas-" + i).value;
+    var matiz = document.getElementById("matiz-" + i);
+    var pending = !!sel && matiz.value.trim().length === 0;
+    matiz.classList.toggle("needs-matiz", pending);
+  }
+
+  function updateResumen() {
+    var counts = { rojo: 0, amarillo: 0, verde: 0, total: 0 };
+    var matizPendientes = 0;
+    for (var i = 0; i < 3; i++) {
+      var v = document.getElementById("clas-" + i).value;
+      if (v) {
+        counts[v]++; counts.total++;
+        if (document.getElementById("matiz-" + i).value.trim().length === 0) matizPendientes++;
+      }
+    }
+    var barra = document.getElementById("resumen-barra");
+    var texto = document.getElementById("resumen-texto");
+    if (counts.total === 0) {
+      barra.innerHTML = "";
+      texto.textContent = "Completa la clasificación de las 3 experiencias para ver el análisis grupal.";
+      texto.className = "resumen-texto muted";
+      return;
+    }
+    var segs = ["rojo", "amarillo", "verde"].map(function (c) {
+      var pct = Math.round((counts[c] / 3) * 100);
+      return pct > 0 ? '<div class="seg ' + c + '" style="width:' + pct + '%"></div>' : "";
+    }).join("");
+    barra.innerHTML = segs;
+
+    if (matizPendientes > 0) {
+      texto.textContent = "⚠️ Falta el matiz de " + matizPendientes + " experiencia(s) clasificada(s). Ninguna es puramente roja o verde — completa qué la contradice antes de cerrar el análisis.";
+      texto.className = "resumen-texto";
+      return;
+    }
+
+    var msg;
+    if (counts.verde >= 2) {
+      msg = "La mayoría de sus experiencias son transformadoras. Revisen si su propia micro-intervención está a la altura de ese estándar crítico — y si los matices que anotaron la ponen en duda.";
+    } else if (counts.rojo >= 2) {
+      msg = "La mayoría de sus experiencias corren riesgo de cooptación funcional. Identifiquen qué cambiarían para que cedan poder real a la comunidad.";
+    } else {
+      msg = "Panorama mixto: usen los elementos verdes identificados —y los matices que anotaron— para refinar los aspectos amarillos o rojos de su propia propuesta.";
+    }
+    texto.textContent = "🔴 " + counts.rojo + " · 🟡 " + counts.amarillo + " · 🟢 " + counts.verde + " — " + msg;
+    texto.className = "resumen-texto";
+  }
+
+  function loadData() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      var data = JSON.parse(raw);
+      fieldIds.forEach(function (id) {
+        if (data[id] !== undefined && document.getElementById(id)) {
+          document.getElementById(id).value = data[id];
+        }
+      });
+      for (var i = 0; i < 3; i++) { updateCardBorder(i); updateMatizWarning(i); }
+      updateResumen();
+    } catch (e) {}
+  }
+
+  function saveData() {
+    var data = {};
+    fieldIds.forEach(function (id) {
+      data[id] = document.getElementById(id).value;
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  fieldIds.forEach(function (id) {
+    document.getElementById(id).addEventListener("input", function () {
+      var i = id.split("-")[1];
+      if (id.indexOf("clas-") === 0) {
+        updateCardBorder(i);
+      }
+      if (id.indexOf("clas-") === 0 || id.indexOf("matiz-") === 0) {
+        updateMatizWarning(i);
+        updateResumen();
+      }
+    });
+    document.getElementById(id).addEventListener("change", updateResumen);
+  });
+
+  document.getElementById("btn-guardar-sem").addEventListener("click", function () {
+    saveData();
+    var btn = document.getElementById("btn-guardar-sem");
+    var original = btn.textContent;
+    btn.textContent = "✓ Guardado";
+    setTimeout(function () { btn.textContent = original; }, 1400);
+  });
+
+  document.getElementById("btn-imprimir-sem").addEventListener("click", function () {
+    saveData();
+    window.print();
+  });
+
+  document.getElementById("btn-reset-sem").addEventListener("click", function () {
+    if (!confirm("¿Borrar las 3 experiencias guardadas en este navegador?")) return;
+    localStorage.removeItem(STORAGE_KEY);
+    location.reload();
+  });
+
+  loadData();
+})();
+</script>
