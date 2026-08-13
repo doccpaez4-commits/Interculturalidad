@@ -11,7 +11,6 @@ title: Inicio
   <div class="stat-card"><div class="stat-icon">⏱</div><div class="stat-value">{{ site.data.curso.horas }} horas</div><div class="stat-label">2 créditos</div></div>
   <div class="stat-card"><div class="stat-icon">🗓</div><div class="stat-value">{{ site.data.curso.horario_general }}</div><div class="stat-label">Cada 15 días</div></div>
   <div class="stat-card"><div class="stat-icon">📍</div><div class="stat-value">{{ site.data.curso.salon }}</div><div class="stat-label">Presencial</div></div>
-  <div class="stat-card"><div class="stat-icon">👤</div><div class="stat-value">{{ site.data.curso.docente }}</div><div class="stat-label">Docente</div></div>
 </div>
 
 <p><a href="{{ '/contenidos.html' | relative_url }}">Ver el calendario completo de las 4 sesiones →</a></p>
@@ -60,7 +59,3 @@ Esta electiva profundiza en la relación entre salud pública e interculturalida
 <div class="callout">
   <strong>Un curso para practicar, no solo para leer.</strong> En 4 sesiones intensivas, cada grupo trabaja con una familia, comunidad o colectivo real en tres entregas: Diagnóstico y Micro-Propuesta (P1), Semáforo Intercultural (P2) y Entrega final del proceso (P3). Ver <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a>.
 </div>
-
-## 🧑‍🏫 Perfil del docente
-
-Profesional en ciencias humanas o de la salud, con posgrado en alguna de las áreas, con experiencia docente en temáticas socioculturales y procesos de salud-enfermedad-cuidado.

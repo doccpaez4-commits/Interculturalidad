@@ -51,9 +51,3 @@ title: Metodología
 <div class="callout">
   Desde la sesión 1, cada estudiante elabora un <strong>Protocolo de Acercamiento Ético-Intercultural</strong> — inspirado en el legado de Héctor Abad Gómez — antes del primer contacto con la familia, comunidad o colectivo elegido: explicar que se trata de un <strong>ejercicio académico</strong>, pedir consentimiento para conversar y, si aplica, para tomar notas o fotografías, y comprometerse a compartir al final un resumen de lo aprendido como forma de retribución.
 </div>
-
-## 🧑‍🏫 Perfil del docente
-
-<div class="card">
-<p style="margin-bottom:0;">Profesional en ciencias humanas o de la salud, con posgrado en alguna de las áreas, con experiencia docente en temáticas socioculturales y procesos de salud-enfermedad-cuidado.</p>
-</div>
