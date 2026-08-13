@@ -17,6 +17,24 @@ title: Rúbricas SOLO
 </div>
 </div>
 
+<div class="grading-panel" data-site-key="intercultural">
+  <div class="gp-row">
+    <label class="gp-label" for="gp-name">👤 Estudiante / grupo</label>
+    <input type="text" id="gp-name" class="gp-input" placeholder="Nombre del estudiante o grupo">
+  </div>
+  <div class="gp-scores">
+    <div class="gp-score-item"><span class="gp-score-label">Entrega 1 (30%)</span><span class="gp-score-value" id="gp-score-0">—</span></div>
+    <div class="gp-score-item"><span class="gp-score-label">Entrega 2 (30%)</span><span class="gp-score-value" id="gp-score-1">—</span></div>
+    <div class="gp-score-item"><span class="gp-score-label">Entrega 3 (40%)</span><span class="gp-score-value" id="gp-score-2">—</span></div>
+    <div class="gp-score-item gp-final"><span class="gp-score-label">Nota final</span><span class="gp-score-value" id="gp-final">—</span></div>
+  </div>
+  <div class="gp-actions">
+    <button type="button" id="gp-save" class="gp-btn gp-btn-primary">💾 Guardar y calificar siguiente</button>
+    <button type="button" id="gp-reset" class="gp-btn">↺ Limpiar selección</button>
+  </div>
+</div>
+<div class="gp-toast" id="gp-toast"></div>
+
 <div class="rubric-activity">
 <h2>P1 · Diagnóstico y Micro-Propuesta — Corte 1 (30%) · Sesión 2</h2>
 <p>El peso entre paréntesis en cada criterio corresponde a su participación dentro de esta entrega. Ver detalle en <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a>.</p>
@@ -34,54 +52,129 @@ title: Rúbricas SOLO
 </div>
 </div>
 
-<div class="rubric-wrap">
-<table class="rubric">
-<thead>
-<tr>
-  <th>Criterio</th>
-  <th>1 · Preestructural</th>
-  <th>2 · Uniestructural</th>
-  <th>3 · Multiestructural</th>
-  <th>4 · Relacional</th>
-  <th>5 · Abstracto ampliado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Protocolo de acercamiento ético (25%)</td>
-  <td>No hay evidencia de consentimiento; se aborda a la comunidad sin explicar el ejercicio académico.</td>
-  <td>Menciona que pidió permiso, pero sin describir cómo ni con qué metodología.</td>
-  <td>Describe el consentimiento y el primer contacto de forma genérica, sin adaptarlo a la comunidad específica.</td>
-  <td>El protocolo está adaptado a la comunidad concreta y articula consentimiento informado con una metodología participativa clara.</td>
-  <td>El protocolo se construye junto con la comunidad (no solo se les informa) y anticipa cómo se retribuirá su participación al cierre.</td>
-</tr>
-<tr>
-  <td>Diagnóstico sociocultural (35%)</td>
-  <td>El problema se describe de forma biomédica/causal, sin ninguna lectura sociocultural.</td>
-  <td>Menciona la epidemiología crítica como concepto, sin aplicarla al caso.</td>
-  <td>Aplica la epidemiología crítica de forma parcial: identifica determinantes, pero como lista aislada.</td>
-  <td>El diagnóstico articula la determinación social del problema (Breilh) con lo que la comunidad identificó como prioritario.</td>
-  <td>El diagnóstico comprende el problema como proceso de determinación social —articulando las dimensiones general (estructuras de poder e historia), particular (modos de vida del colectivo) y singular (cuerpos y biografías)— sin reducirlo a una cadena de causas y efectos.</td>
-</tr>
-<tr>
-  <td>Co-diseño de la intervención (25%)</td>
-  <td>La intervención es propuesta unilateralmente por el estudiante, sin participación de la comunidad.</td>
-  <td>Se menciona participación, pero la propuesta sigue siendo definida por el estudiante.</td>
-  <td>La comunidad participa validando una propuesta ya elaborada.</td>
-  <td>La priorización y el diseño de la intervención se construyen conjuntamente con la comunidad desde el inicio.</td>
-  <td>El co-diseño integra saberes académicos y locales en igualdad de condiciones, y es viable con los recursos reales de la comunidad.</td>
-</tr>
-<tr>
-  <td>Fundamentación teórica (15%)</td>
-  <td>No hay referencia teórica o es incorrecta.</td>
-  <td>Nombra a Walsh, Basail o Breilh sin desarrollar sus ideas.</td>
-  <td>Explica correctamente uno de los tres referentes, aplicado de forma general.</td>
-  <td>Articula coherentemente dos o más referentes (Walsh, Basail, Breilh) con el caso propio.</td>
-  <td>Usa el marco decolonial para cuestionar críticamente su propio lugar como interviniente, no solo para justificar la intervención.</td>
-</tr>
-</tbody>
-</table>
+<div class="irubric" data-entrega="0" data-weight="30">
+  <div class="irc" data-weight="25">
+    <div class="irc-head"><span class="irc-name">Protocolo de acercamiento ético</span><span class="irc-weight">25%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c0" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay evidencia de consentimiento; se aborda a la comunidad sin explicar el ejercicio académico.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c0" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Menciona que pidió permiso, pero sin describir cómo ni con qué metodología.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c0" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Describe el consentimiento y el primer contacto de forma genérica, sin adaptarlo a la comunidad específica.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c0" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">El protocolo está adaptado a la comunidad concreta y articula consentimiento informado con una metodología participativa clara.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c0" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El protocolo se construye junto con la comunidad (no solo se les informa) y anticipa cómo se retribuirá su participación al cierre.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="35">
+    <div class="irc-head"><span class="irc-name">Diagnóstico sociocultural</span><span class="irc-weight">35%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c1" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">El problema se describe de forma biomédica/causal, sin ninguna lectura sociocultural.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c1" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Menciona la epidemiología crítica como concepto, sin aplicarla al caso.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c1" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Aplica la epidemiología crítica de forma parcial: identifica determinantes, pero como lista aislada.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c1" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">El diagnóstico articula la determinación social del problema (Breilh) con lo que la comunidad identificó como prioritario.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c1" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El diagnóstico comprende el problema como proceso de determinación social —articulando las dimensiones general (estructuras de poder e historia), particular (modos de vida del colectivo) y singular (cuerpos y biografías)— sin reducirlo a una cadena de causas y efectos.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="25">
+    <div class="irc-head"><span class="irc-name">Co-diseño de la intervención</span><span class="irc-weight">25%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c2" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">La intervención es propuesta unilateralmente por el estudiante, sin participación de la comunidad.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c2" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Se menciona participación, pero la propuesta sigue siendo definida por el estudiante.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c2" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">La comunidad participa validando una propuesta ya elaborada.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c2" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">La priorización y el diseño de la intervención se construyen conjuntamente con la comunidad desde el inicio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c2" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El co-diseño integra saberes académicos y locales en igualdad de condiciones, y es viable con los recursos reales de la comunidad.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="15">
+    <div class="irc-head"><span class="irc-name">Fundamentación teórica</span><span class="irc-weight">15%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c3" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay referencia teórica o es incorrecta.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c3" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Nombra a Walsh, Basail o Breilh sin desarrollar sus ideas.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c3" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Explica correctamente uno de los tres referentes, aplicado de forma general.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c3" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">Articula coherentemente dos o más referentes (Walsh, Basail, Breilh) con el caso propio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e0-c3" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">Usa el marco decolonial para cuestionar críticamente su propio lugar como interviniente, no solo para justificar la intervención.</span>
+      </label>
+    </div>
+  </div>
 </div>
+<div class="irc-result" id="irubric-result-0">Sin calificar aún</div>
 
 <div class="rubric-activity">
 <h2>P2 · Semáforo Intercultural — Corte 2 (30%) · Sesión 3</h2>
@@ -100,54 +193,129 @@ title: Rúbricas SOLO
 </div>
 </div>
 
-<div class="rubric-wrap">
-<table class="rubric">
-<thead>
-<tr>
-  <th>Criterio</th>
-  <th>1 · Preestructural</th>
-  <th>2 · Uniestructural</th>
-  <th>3 · Multiestructural</th>
-  <th>4 · Relacional</th>
-  <th>5 · Abstracto ampliado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Identificación de experiencias (25%)</td>
-  <td>No identifica experiencias o son irrelevantes al problema propio.</td>
-  <td>Identifica 1 experiencia, sin contexto suficiente.</td>
-  <td>Identifica 3 experiencias, pero con descripciones superficiales de contexto y metodología.</td>
-  <td>Las 3 experiencias están bien contextualizadas y su metodología está claramente caracterizada.</td>
-  <td>La selección incluye experiencias diversas (local, nacional, internacional) que iluminan distintas dimensiones del problema propio.</td>
-</tr>
-<tr>
-  <td>Clasificación crítica (35%)</td>
-  <td>No usa el semáforo o lo aplica sin criterio.</td>
-  <td>Clasifica las experiencias, pero sin justificación.</td>
-  <td>Justifica la clasificación con descripciones, sin analizar relaciones de poder.</td>
-  <td>La clasificación se justifica analizando explícitamente quién cede o retiene poder en cada experiencia.</td>
-  <td>El análisis revela matices dentro de cada experiencia — ninguna es puramente roja o verde — y lo argumenta con evidencia.</td>
-</tr>
-<tr>
-  <td>Análisis reflexivo (25%)</td>
-  <td>No hay reflexión, solo la clasificación.</td>
-  <td>Menciona qué evitar, mejorar o integrar de forma genérica.</td>
-  <td>Identifica elementos concretos a evitar, mejorar e integrar, pero de forma aislada entre categorías.</td>
-  <td>El análisis conecta los elementos rojos, amarillos y verdes con decisiones concretas para la propia intervención.</td>
-  <td>El análisis transforma la mirada del propio proyecto: el estudiante reconoce riesgos de cooptación en su propuesta inicial.</td>
-</tr>
-<tr>
-  <td>Refinamiento de la propuesta (15%)</td>
-  <td>No hay refinamiento; la propuesta queda igual.</td>
-  <td>Se menciona un ajuste, sin relación clara con el análisis del semáforo.</td>
-  <td>La propuesta se ajusta en algún aspecto puntual a partir del semáforo.</td>
-  <td>El refinamiento es coherente y trazable: se ve qué aprendizaje del semáforo generó qué cambio.</td>
-  <td>El refinamiento mueve la propuesta hacia el polo crítico/verde, cediendo más protagonismo real a la comunidad.</td>
-</tr>
-</tbody>
-</table>
+<div class="irubric" data-entrega="1" data-weight="30">
+  <div class="irc" data-weight="25">
+    <div class="irc-head"><span class="irc-name">Identificación de experiencias</span><span class="irc-weight">25%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c0" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No identifica experiencias o son irrelevantes al problema propio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c0" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Identifica 1 experiencia, sin contexto suficiente.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c0" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Identifica 3 experiencias, pero con descripciones superficiales de contexto y metodología.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c0" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">Las 3 experiencias están bien contextualizadas y su metodología está claramente caracterizada.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c0" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">La selección incluye experiencias diversas (local, nacional, internacional) que iluminan distintas dimensiones del problema propio.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="35">
+    <div class="irc-head"><span class="irc-name">Clasificación crítica</span><span class="irc-weight">35%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c1" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No usa el semáforo o lo aplica sin criterio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c1" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Clasifica las experiencias, pero sin justificación.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c1" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Justifica la clasificación con descripciones, sin analizar relaciones de poder.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c1" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">La clasificación se justifica analizando explícitamente quién cede o retiene poder en cada experiencia.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c1" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El análisis revela matices dentro de cada experiencia — ninguna es puramente roja o verde — y lo argumenta con evidencia.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="25">
+    <div class="irc-head"><span class="irc-name">Análisis reflexivo</span><span class="irc-weight">25%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c2" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay reflexión, solo la clasificación.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c2" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Menciona qué evitar, mejorar o integrar de forma genérica.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c2" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Identifica elementos concretos a evitar, mejorar e integrar, pero de forma aislada entre categorías.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c2" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">El análisis conecta los elementos rojos, amarillos y verdes con decisiones concretas para la propia intervención.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c2" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El análisis transforma la mirada del propio proyecto: el estudiante reconoce riesgos de cooptación en su propuesta inicial.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="15">
+    <div class="irc-head"><span class="irc-name">Refinamiento de la propuesta</span><span class="irc-weight">15%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c3" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay refinamiento; la propuesta queda igual.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c3" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Se menciona un ajuste, sin relación clara con el análisis del semáforo.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c3" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">La propuesta se ajusta en algún aspecto puntual a partir del semáforo.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c3" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">El refinamiento es coherente y trazable: se ve qué aprendizaje del semáforo generó qué cambio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e1-c3" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El refinamiento mueve la propuesta hacia el polo crítico/verde, cediendo más protagonismo real a la comunidad.</span>
+      </label>
+    </div>
+  </div>
 </div>
+<div class="irc-result" id="irubric-result-1">Sin calificar aún</div>
 
 <div class="rubric-activity">
 <h2>P3 · Entrega final del proceso intercultural — Corte 3 (40%) · Sesión 4</h2>
@@ -166,53 +334,143 @@ title: Rúbricas SOLO
 </div>
 </div>
 
-<div class="rubric-wrap">
-<table class="rubric">
-<thead>
-<tr>
-  <th>Criterio</th>
-  <th>1 · Preestructural</th>
-  <th>2 · Uniestructural</th>
-  <th>3 · Multiestructural</th>
-  <th>4 · Relacional</th>
-  <th>5 · Abstracto ampliado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Ejecución de la micro-intervención (35%)</td>
-  <td>No se ejecutó la intervención, o se hizo sin la comunidad.</td>
-  <td>Se ejecutó, pero difiere sustancialmente del diseño co-creado.</td>
-  <td>Se ejecutó fielmente al diseño, con participación de la comunidad en al menos un momento.</td>
-  <td>La ejecución respeta los protocolos comunitarios y mantiene participación activa durante todo el proceso.</td>
-  <td>La ejecución integra saberes tradicionales como parte constitutiva de la acción, no solo como consulta previa.</td>
-</tr>
-<tr>
-  <td>Documentación integral (30%)</td>
-  <td>No hay documentación, o es mínima.</td>
-  <td>Hay registro fotográfico, sin documento ni testimonios.</td>
-  <td>El documento describe la experiencia con evidencia fotográfica básica.</td>
-  <td>La documentación es integral: documento completo, registro sistemático y testimonios contextualizados.</td>
-  <td>La documentación permite por sí misma comprender — y eventualmente replicar — el proceso con otra comunidad.</td>
-</tr>
-<tr>
-  <td>Evaluación participativa (20%)</td>
-  <td>No se recoge retroalimentación de la comunidad.</td>
-  <td>Se menciona que hubo retroalimentación, sin detalle.</td>
-  <td>Se recoge retroalimentación puntual, sin analizar impactos ni cambios.</td>
-  <td>Se analiza sistemáticamente qué cambió y qué aprendieron ambas partes — estudiante y comunidad.</td>
-  <td>La evaluación participativa influye en cómo el estudiante interpreta y cierra su propio proceso de aprendizaje.</td>
-</tr>
-<tr>
-  <td>Análisis crítico decolonial (15%)</td>
-  <td>No hay análisis crítico; se describe la intervención como un éxito sin cuestionamiento.</td>
-  <td>Se menciona si "funcionó" o no, sin marco decolonial.</td>
-  <td>Se aplica el marco decolonial de forma general, sin conectarlo con el caso propio.</td>
-  <td>El debate está fundamentado con Walsh y Basail y se aplica específicamente al caso propio, identificando tensiones reales.</td>
-  <td>El análisis reconoce con honestidad si la intervención fue más funcional que crítica, y qué se necesitaría para transformarla en una acción que ceda poder real.</td>
-</tr>
-</tbody>
+<div class="irubric" data-entrega="2" data-weight="40">
+  <div class="irc" data-weight="35">
+    <div class="irc-head"><span class="irc-name">Ejecución de la micro-intervención</span><span class="irc-weight">35%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c0" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No se ejecutó la intervención, o se hizo sin la comunidad.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c0" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Se ejecutó, pero difiere sustancialmente del diseño co-creado.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c0" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Se ejecutó fielmente al diseño, con participación de la comunidad en al menos un momento.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c0" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">La ejecución respeta los protocolos comunitarios y mantiene participación activa durante todo el proceso.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c0" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">La ejecución integra saberes tradicionales como parte constitutiva de la acción, no solo como consulta previa.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="30">
+    <div class="irc-head"><span class="irc-name">Documentación integral</span><span class="irc-weight">30%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c1" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay documentación, o es mínima.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c1" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Hay registro fotográfico, sin documento ni testimonios.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c1" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">El documento describe la experiencia con evidencia fotográfica básica.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c1" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">La documentación es integral: documento completo, registro sistemático y testimonios contextualizados.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c1" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">La documentación permite por sí misma comprender — y eventualmente replicar — el proceso con otra comunidad.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="20">
+    <div class="irc-head"><span class="irc-name">Evaluación participativa</span><span class="irc-weight">20%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c2" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No se recoge retroalimentación de la comunidad.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c2" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Se menciona que hubo retroalimentación, sin detalle.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c2" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Se recoge retroalimentación puntual, sin analizar impactos ni cambios.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c2" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">Se analiza sistemáticamente qué cambió y qué aprendieron ambas partes — estudiante y comunidad.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c2" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">La evaluación participativa influye en cómo el estudiante interpreta y cierra su propio proceso de aprendizaje.</span>
+      </label>
+    </div>
+  </div>
+  <div class="irc" data-weight="15">
+    <div class="irc-head"><span class="irc-name">Análisis crítico decolonial</span><span class="irc-weight">15%</span></div>
+    <div class="irc-levels">
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c3" data-level="1" data-score="1.0">
+        <span class="irc-opt-top">1 · Preestructural</span>
+        <span class="irc-opt-desc">No hay análisis crítico; se describe la intervención como un éxito sin cuestionamiento.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c3" data-level="2" data-score="2.0">
+        <span class="irc-opt-top">2 · Uniestructural</span>
+        <span class="irc-opt-desc">Se menciona si "funcionó" o no, sin marco decolonial.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c3" data-level="3" data-score="3.0">
+        <span class="irc-opt-top">3 · Multiestructural</span>
+        <span class="irc-opt-desc">Se aplica el marco decolonial de forma general, sin conectarlo con el caso propio.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c3" data-level="4" data-score="4.0">
+        <span class="irc-opt-top">4 · Relacional</span>
+        <span class="irc-opt-desc">El debate está fundamentado con Walsh y Basail y se aplica específicamente al caso propio, identificando tensiones reales.</span>
+      </label>
+      <label class="irc-opt">
+        <input type="radio" name="intercultural-e2-c3" data-level="5" data-score="5.0">
+        <span class="irc-opt-top">5 · Abstracto ampliado</span>
+        <span class="irc-opt-desc">El análisis reconoce con honestidad si la intervención fue más funcional que crítica, y qué se necesitaría para transformarla en una acción que ceda poder real.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="irc-result" id="irubric-result-2">Sin calificar aún</div>
+
+<div class="gp-savedlist-wrap">
+<h2>📋 Calificaciones guardadas en este navegador</h2>
+<p class="muted" style="font-size:13px; margin-top:-6px;">Se guardan localmente en este navegador (no se suben a ningún servidor). Usa "Copiar todo" para pegarlas en Excel u otra planilla.</p>
+<div class="gp-savedlist-actions">
+  <button type="button" id="gp-copy" class="gp-btn">📋 Copiar todo (para Excel)</button>
+  <button type="button" id="gp-clearall" class="gp-btn gp-btn-danger">🗑 Borrar todas</button>
+</div>
+<div class="gp-table-wrap">
+<table class="gp-table">
+<thead><tr><th>Estudiante</th><th>Entrega 1 (30%)</th><th>Entrega 2 (30%)</th><th>Entrega 3 (40%)</th><th>Nota final</th><th></th></tr></thead>
+<tbody id="gp-table-body"></tbody>
 </table>
+</div>
 </div>
 
 <div class="criteria-block">
