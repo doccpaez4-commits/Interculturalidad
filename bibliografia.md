@@ -37,6 +37,7 @@ title: Bibliografía
   <div class="lectura-card">
     <h4>Marco decolonial</h4>
     <p><strong>Walsh, C. (2009).</strong> Interculturalidad crítica y pedagogía de-colonial. Ponencia, seminario Interculturalidad y Educación Intercultural.</p>
+    <p><strong>Menéndez, E. L. (2003).</strong> Modelos de atención de los padecimientos: de exclusiones teóricas y articulaciones prácticas. <em>Ciência &amp; Saúde Coletiva, 8</em>(1), 185-207. <span class="muted">— Lectura de apertura del curso.</span></p>
     <p><strong>Menéndez, E. L. (2016).</strong> Salud intercultural: propuestas, acciones y fracasos. <em>Ciência &amp; Saúde Coletiva, 21</em>, 109-118.</p>
   </div>
   <div class="lectura-card">

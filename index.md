@@ -48,6 +48,10 @@ title: Inicio
 
 Esta electiva profundiza en la relación entre salud pública e interculturalidad: se analizan los paradigmas interdisciplinares vigentes y se reflexiona sobre la dimensión sociocultural del proceso salud-enfermedad, a partir de casos latinoamericanos. La meta es apropiar herramientas teóricas y metodológicas que promuevan el diálogo e intercambio de saberes.
 
+<div class="callout">
+  <strong>📖 Lectura de apertura sugerida.</strong> Menéndez, E. L. (2003). <em>Modelos de atención de los padecimientos: de exclusiones teóricas y articulaciones prácticas.</em> Ciência &amp; Saúde Coletiva, 8(1), 185-207. Introduce el concepto de "modelo médico hegemónico" y muestra cómo, aunque la biomedicina excluye teóricamente los saberes populares y tradicionales, en la práctica cotidiana (la autoatención) las personas articulan varios modelos de cuidado a la vez. Es un buen punto de partida para el curso: nombra justo la tensión entre saberes que la micro-intervención piloto busca reconocer y, cuando es posible, tender puentes sobre ella. Ver referencia completa en <a href="{{ '/bibliografia.html' | relative_url }}">Bibliografía</a>.
+</div>
+
 ## 🔍 Núcleo problémico
 
 <ul class="icon-list">

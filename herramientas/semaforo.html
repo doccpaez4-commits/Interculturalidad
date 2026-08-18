@@ -53,7 +53,7 @@ title: Herramienta del Semáforo Intercultural
 .exp-card input[type="text"], .exp-card textarea, .exp-card select {
   width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13.5px; font-family: inherit; resize: vertical;
 }
-.exp-card textarea { min-height: 64px; }
+.exp-card textarea { min-height: 64px; overflow-y: hidden; resize: none; }
 .exp-card label.label-matiz { color: #92400e; }
 .exp-card textarea.needs-matiz { border-color: #f59e0b; background: #fffbeb; }
 .resumen-barra { display: flex; height: 26px; border-radius: 999px; overflow: hidden; margin: 10px 0 14px; background: var(--border); }
@@ -113,9 +113,22 @@ title: Herramienta del Semáforo Intercultural
   for (var i = 0; i < 3; i++) { grid.insertAdjacentHTML("beforeend", cardHTML(i)); }
 
   var fieldIds = [];
+  var textareaIds = [];
   for (var i = 0; i < 3; i++) {
     fieldIds.push("nombre-" + i, "ubic-" + i, "desc-" + i, "clas-" + i, "just-" + i, "matiz-" + i);
+    textareaIds.push("desc-" + i, "just-" + i, "matiz-" + i);
   }
+
+  function autoGrow(el) {
+    el.style.height = "auto";
+    el.style.height = el.scrollHeight + "px";
+  }
+
+  textareaIds.forEach(function (id) {
+    var el = document.getElementById(id);
+    autoGrow(el);
+    el.addEventListener("input", function () { autoGrow(this); });
+  });
 
   function updateCardBorder(i) {
     var sel = document.getElementById("clas-" + i).value;
@@ -183,6 +196,7 @@ title: Herramienta del Semáforo Intercultural
         }
       });
       for (var i = 0; i < 3; i++) { updateCardBorder(i); updateMatizWarning(i); }
+      textareaIds.forEach(function (id) { autoGrow(document.getElementById(id)); });
       updateResumen();
     } catch (e) {}
   }
