@@ -44,6 +44,12 @@ title: Inicio
   </div>
 </div>
 
+<div class="criteria-block" style="background:linear-gradient(135deg,#eef2ff,#f5f3ff); border-color:#c7d2fe;">
+<h3 style="color:#4338ca;">🧰 Herramienta interactiva — Epidemiología Crítica &amp; HiMupAC</h3>
+<p style="margin:0 0 10px; color:var(--ink);">Instrumento pedagógico de acceso gratuito para practicar la lente de <strong>epidemiología crítica (Breilh)</strong> sobre un territorio real: modelo dialéctico General – Particular – Singular, con módulos de Conceptos, Matriz, Síntesis, Praxis, HiMupAC, Evaluación y Glosario. Útil como apoyo para leer el territorio de su micro-intervención más allá de lo cultural-descriptivo.</p>
+<p style="margin:0;"><a href="https://doccpaez4-commits.github.io/epicritica/" target="_blank" rel="noopener"><strong>Abrir la herramienta →</strong></a></p>
+</div>
+
 ## 📖 Presentación
 
 Esta electiva profundiza en la relación entre salud pública e interculturalidad: se analizan los paradigmas interdisciplinares vigentes y se reflexiona sobre la dimensión sociocultural del proceso salud-enfermedad, a partir de casos latinoamericanos. La meta es apropiar herramientas teóricas y metodológicas que promuevan el diálogo e intercambio de saberes.

@@ -15,6 +15,12 @@ title: Bibliografía
   <p style="margin-bottom:0; font-size:14px;">La primera actualiza la Unidad 3 (experiencias de salud intercultural en América Latina) con evidencia agregada de 75 estudios en 13 países. La segunda aporta una mirada crítica y decolonial a la Unidad 4 (debates contemporáneos).</p>
 </div>
 
+<div class="criteria-block" style="background:linear-gradient(135deg,#eef2ff,#f5f3ff); border-color:#c7d2fe;">
+<h3 style="color:#4338ca;">🧰 Herramienta interactiva — Epidemiología Crítica &amp; HiMupAC</h3>
+<p style="margin:0 0 10px; color:var(--ink);">Instrumento pedagógico de acceso gratuito, desarrollado por el docente a partir de la obra de Jaime Breilh, para aplicar la epidemiología crítica sobre un territorio real (módulos de Conceptos, Matriz, Síntesis, Praxis, HiMupAC, Evaluación y Glosario, con opción de guardar/exportar el análisis).</p>
+<p style="margin:0;"><a href="https://doccpaez4-commits.github.io/epicritica/" target="_blank" rel="noopener"><strong>Abrir la herramienta →</strong></a></p>
+</div>
+
 <div class="lectura-theme">
 <h3>📚 Fundamentos teóricos de la interculturalidad</h3>
 <div class="lectura-grid">
