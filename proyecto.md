@@ -10,44 +10,49 @@ title: Proyecto de aula
   Elige <strong>una</strong> familia, comunidad o colectivo social (puede ser tu propia familia, un grupo de vecinos, una junta comunal, un colectivo de pacientes, una comunidad étnica o religiosa, etc.) y trabaja con él/ella durante todo el curso. La intervención debe ser <strong>breve, de bajo costo y co-diseñada</strong> — no se trata de una investigación extensa ni de un proyecto de infraestructura, sino de una acción concreta y de alto valor simbólico que las tres entregas documentan de principio a fin.
 </div>
 
-<div class="rubric-activity">
-<h2>P1 · Diagnóstico y Micro-Propuesta</h2>
+<div class="callout" style="background:#fff7ed; border-color:#fed7aa; border-left-color:#ea580c;">
+  <strong>⚠️ Evidencias reales, no narradas.</strong> Las tres entregas deben mostrar <strong>evidencia verificable</strong> del trabajo de campo real (registro de encuentros, fotos, notas, testimonios, matrices firmadas o comentadas por el colectivo). Un texto bien escrito pero sin evidencia trazable de que el proceso ocurrió con el colectivo no cumple el objetivo del proyecto de aula.
+</div>
+
+<div class="rubric-activity" id="p1">
+<h2>P1 · Protocolo Ético y Diagnóstico Participativo</h2>
 <p><strong>Corte 1 — 30% · Se entrega en la sesión 2</strong></p>
-<p>Documento <em>"Diagnóstico Sociocultural Crítico y Micro-Propuesta de Intervención"</em>: combina en una sola entrega el diagnóstico y el co-diseño de la intervención.</p>
+<p>Documento escrito en PDF que fundamenta el acercamiento ético al territorio y presenta un diagnóstico participativo construido <em>en conjunto</em> con el colectivo elegido, visibilizando las problemáticas identificadas y la propuesta inicial de trabajo.</p>
 <ol>
-  <li><strong>Protocolo de acercamiento ético-intercultural:</strong> cómo se contactó a la comunidad, qué consentimiento se pidió, qué metodología participativa se usó.</li>
-  <li><strong>Diagnóstico sociocultural crítico:</strong> aplicación de la epidemiología crítica (Breilh) para leer el problema desde la determinación social — no se buscan sus causas, sino cómo se articulan las dimensiones general (estructuras de poder e historia), particular (modos de vida del colectivo) y singular (cuerpos y biografías) que lo determinan.</li>
-  <li><strong>Priorización participativa:</strong> de los problemas identificados en el primer contacto, ¿cuál priorizó la propia comunidad, y por qué?</li>
-  <li><strong>Co-diseño de la micro-propuesta:</strong> una intervención viable en 2–3 semanas, culturalmente pertinente, diseñada <em>en conjunto</em> con la comunidad — no propuesta desde afuera.</li>
-  <li><strong>Fundamentación teórica:</strong> articulación explícita con los debates decoloniales de Walsh, Basail y Breilh.</li>
+  <li><strong>Caracterización del colectivo o comunidad:</strong> contexto territorial, social y cultural donde se ubica el grupo, y justificación de por qué se eligió.</li>
+  <li><strong>Protocolo de acercamiento ético e intercultural:</strong> estrategia de contacto inicial y construcción de confianza, proceso de consentimiento/asentimiento informado adaptado al lenguaje y dinámica del contexto, y acuerdos sobre el uso ético de la información y el respeto a la autonomía comunitaria.</li>
+  <li><strong>Diagnóstico participativo y diálogo de saberes:</strong> herramientas participativas aplicadas con evidencia real (cartografía social, círculos de palabra, entrevistas abiertas), identificación de la problemática priorizada por la propia comunidad (en salud o en pérdida de saberes culturales) y los criterios comunitarios usados para priorizarla.</li>
+  <li><strong>Co-diseño de la micro-propuesta:</strong> planteamiento preliminar de la intervención de campo, viable para ejecutarse en 2 a 3 semanas, con roles y tareas compartidas entre estudiantes e integrantes del colectivo.</li>
 </ol>
-<p><strong>Entregable:</strong> documento de 2–3 páginas.</p>
+<p><strong>Entregable:</strong> documento escrito en PDF, 3 a 4 páginas (sin contar portada ni referencias en norma APA).</p>
+<p><strong>Criterios de evaluación:</strong> claridad ética, pertinencia del diálogo de saberes, participación comunitaria real en el diagnóstico y viabilidad de la propuesta. Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P1</a>.</p>
 </div>
 
-<div class="rubric-activity">
-<h2>P2 · Semáforo Intercultural (trabajo en clase)</h2>
-<p><strong>Corte 2 — 30% · Se entrega en la sesión 3</strong></p>
-<p>A diferencia de P1 y P3, esta entrega se construye <strong>en clase</strong>, no en campo: es un ejercicio de análisis crítico que usa lo vivido en la primera fase de aplicación para mirar la propia micro-intervención con distancia.</p>
+<div class="rubric-activity" id="p2">
+<h2>P2 · Laboratorio de Avances y Reajuste Colaborativo</h2>
+<p><strong>Corte 2 — 30% · Se trabaja en la sesión 3</strong></p>
+<p>Evaluación reflexiva del trabajo de campo en marcha. A diferencia de P1 y P3, esta entrega analiza la <strong>experiencia directa</strong> vivida entre sesiones para identificar tensiones epistémicas, barreras institucionales y relaciones de poder, y reajustar la propuesta antes del cierre final mediante un ejercicio colaborativo en clase.</p>
 <ol>
-  <li>Identifiquen <strong>3 experiencias interculturales</strong> relacionadas con su problemática — pueden ser la propia intervención en curso más 2 casos de referencia (locales, nacionales o internacionales).</li>
-  <li>Clasifiquen cada una con el <strong>semáforo intercultural</strong> (🔴🟡🟢, ver abajo), justificando la clasificación con evidencia y análisis de relaciones de poder.</li>
-  <li>Hagan un análisis reflexivo: ¿qué elementos rojos deben evitar, cuáles amarillos deben mejorar, cuáles verdes deben integrar a su propia propuesta?</li>
-  <li>Refinen su micro-propuesta con base en ese análisis, hacia un enfoque más crítico y coherente con el marco decolonial.</li>
+  <li><strong>Reporte de campo y evidencias:</strong> registro real de los encuentros realizados para el co-diseño y el inicio de la micro-intervención, y el nivel de involucramiento y apropiación del colectivo social.</li>
+  <li><strong>Mapeo de tensiones y relaciones de poder:</strong> análisis crítico de las asimetrías entre el saber técnico/salud pública y los saberes locales, e identificación de resistencias institucionales, comunitarias o epistémicas surgidas durante el proceso.</li>
+  <li><strong>Plan de reajuste y cierre:</strong> modificaciones acordadas con la comunidad a partir de los hallazgos en campo, y estrategia para la devolución simbólica de los resultados en la sesión 4.</li>
 </ol>
-<p><strong>Entregable:</strong> se trabaja con la <a href="{{ '/herramientas/semaforo.html' | relative_url }}">herramienta interactiva del Semáforo Intercultural</a> durante la sesión.</p>
+<p><strong>Entregable:</strong> Matriz de Avance Colaborativo en PDF (máximo 2 páginas) + ejercicio práctico en aula: presentación de avances (5 min por grupo, exponiendo la matriz y el principal dilema intercultural enfrentado) y taller de co-evaluación en mesa redonda con pares y docente para ajustar la intervención.</p>
+<p><strong>Criterios de evaluación:</strong> capacidad de autocrítica, análisis de relaciones de poder y calidad de las evidencias de campo. Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P2</a>.</p>
+<p class="muted" style="font-size:14px;">💡 Como apoyo <em>opcional</em> para el mapeo de tensiones, pueden usar la <a href="{{ '/herramientas/semaforo.html' | relative_url }}">herramienta interactiva del Semáforo Intercultural</a>: clasificar sus experiencias en 🔴🟡🟢 según quién cede o retiene poder es una forma rápida de ordenar el análisis antes de volcarlo en la Matriz de Avance. No reemplaza la matriz — es un instrumento de pensamiento, no el entregable.</p>
 </div>
 
-<div class="rubric-activity">
-<h2>P3 · Entrega final del proceso intercultural</h2>
+<div class="rubric-activity" id="p3">
+<h2>P3 · Muestra de la Micro-Intervención y Debate Crítico</h2>
 <p><strong>Corte 3 — 40% · Se presenta en la sesión 4</strong></p>
-<p>Recopilación completa del proceso, cerrada con un debate crítico en clase.</p>
+<p>Sustentación del producto tangible logrado, socialización del proceso de devolución comunitaria y debate teórico sobre el posicionamiento del proyecto frente a los debates de interculturalidad.</p>
 <ol>
-  <li><strong>Ejecución de la micro-intervención:</strong> implementación fiel al diseño co-creado, con participación activa de la comunidad y respeto por sus protocolos.</li>
-  <li><strong>Documentación integral:</strong> registro fotográfico, evidencias audiovisuales y testimonios organizados y contextualizados.</li>
-  <li><strong>Evaluación participativa:</strong> retroalimentación directa de la comunidad — ¿qué cambió?, ¿qué aprendizajes fueron mutuos?</li>
-  <li><strong>Análisis crítico decolonial:</strong> ¿la intervención fue funcional (adaptó la biomedicina sin ceder poder) o crítica (transformó relaciones de poder)? Debate fundamentado con Walsh y Basail.</li>
+  <li><strong>Muestra tangible del producto:</strong> exhibición o reproducción de la micro-intervención co-diseñada (cartilla, material audiovisual, mapa de plantas, protocolo, síntesis de taller, etc.).</li>
+  <li><strong>Devolución y valoración comunitaria:</strong> evidencia real del espacio de retribución o devolución de la información a la comunidad, con testimonios y retroalimentación directa de los participantes sobre el proceso.</li>
+  <li><strong>Fundamentación teórica y debate crítico (Walsh y Basail):</strong> análisis de interculturalidad funcional (¿la acción solo adaptó conocimientos locales al sistema de salud sin modificar jerarquías?) frente a interculturalidad crítica (¿cómo cuestionó o transformó relaciones de poder e inequidades epistémicas en el territorio?).</li>
 </ol>
-<p><strong>Entregable:</strong> presentación breve (máx. 5–7 minutos) con apoyo audiovisual libre, seguida de un debate grupal en clase. Se recomienda compartir después un resumen con el propio colectivo, como forma de retribución por su participación.</p>
+<p><strong>Entregable:</strong> presentación oral (15 minutos por equipo, apoyo audiovisual libre: diapositivas, video o muestra física) + ficha sintética de cierre (PDF de 2 páginas, con resumen ejecutivo, enlace al producto/registro audiovisual y el apartado de sustentación teórica Walsh/Basail). En la sesión 4: exposición del producto y proceso comunitario (7 min por grupo) y debate crítico grupal dirigido por el docente (10 min de discusión teórica por bloque).</p>
+<p><strong>Criterios de evaluación:</strong> calidad del producto co-creado, rigor en la devolución comunitaria y profundidad conceptual en la defensa del debate decolonial/crítico. Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P3</a>.</p>
 </div>
 
 ## Catálogo de micro-intervenciones piloto
@@ -124,7 +129,8 @@ title: Proyecto de aula
 <ul>
   <li><strong>Consentimiento primero:</strong> explica que es un ejercicio académico y pide permiso antes de conversar, intervenir, tomar notas o fotos.</li>
   <li><strong>Si no logras concertar una visita a tiempo</strong>, el docente puede autorizar trabajar con un caso ya documentado (una comunidad conocida en la literatura o un colectivo con el que ya tengas relación), avisando en la sesión 1.</li>
-  <li><strong>Mantén contacto breve entre sesiones</strong> con tu comunidad — ayuda a que el semáforo y la entrega final tengan más profundidad y que la retroalimentación sea genuina.</li>
+  <li><strong>Mantén contacto breve entre sesiones</strong> con tu comunidad — ayuda a que la Matriz de Avance y la entrega final tengan más profundidad y que la retroalimentación sea genuina.</li>
+  <li><strong>Documenta todo con evidencia verificable</strong> desde el primer contacto: fechas, nombres o roles (con su consentimiento), fotos, notas de campo. Es lo que sustenta P1, P2 y P3 — sin evidencia real, no hay cómo calificar el proceso.</li>
   <li>La calificación no depende de la extensión ni de la escala de la intervención: una acción breve y bien co-diseñada vale más que un proyecto ambicioso impuesto desde afuera.</li>
 </ul>
 </div>

@@ -16,7 +16,7 @@ title: Contenidos
   <a href="#s1"><span class="tl-icon">1</span><span class="tl-label">Preparación</span></a>
   <a href="#s2"><span class="tl-icon">2</span><span class="tl-label">Diagnóstico<br>y co-diseño</span></a>
   <a href="#campo1" class="field"><span class="tl-icon">🌱</span><span class="tl-label">Campo I</span></a>
-  <a href="#s3"><span class="tl-icon">3</span><span class="tl-label">Semáforo<br>intercultural</span></a>
+  <a href="#s3"><span class="tl-icon">3</span><span class="tl-label">Avances y<br>reajuste</span></a>
   <a href="#campo2" class="field"><span class="tl-icon">🌱</span><span class="tl-label">Campo II</span></a>
   <a href="#s4"><span class="tl-icon">4</span><span class="tl-label">Entrega final<br>y debate</span></a>
 </div>
@@ -47,8 +47,8 @@ title: Contenidos
     <p><strong>Temas del microcurrículo:</strong> ¿por qué la salud intercultural en salud pública? · diversidad cultural, multiculturalidad e interculturalidad · epidemiología crítica (Breilh).</p>
     <p><strong>Objetivo:</strong> aplicar la epidemiología crítica para leer el problema elegido desde la determinación social —sus dimensiones general, particular y singular, no una cadena de causas— y co-diseñar, con la comunidad, una intervención viable.</p>
     <div class="update-block" style="margin-top:14px;">
-      <h3>🎯 Entrega 1 — P1: Diagnóstico y Micro-Propuesta (30%)</h3>
-      <p style="margin-bottom:0;">Documento con el diagnóstico sociocultural crítico, el problema priorizado junto con la comunidad, y la micro-propuesta de intervención co-diseñada. Ver <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a> y <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P1</a>.</p>
+      <h3>🎯 Entrega 1 — P1: Protocolo Ético y Diagnóstico Participativo (30%)</h3>
+      <p style="margin-bottom:0;">Documento PDF (3–4 páginas) con la caracterización del colectivo, el protocolo de acercamiento ético e intercultural, el diagnóstico participativo con evidencia real de las herramientas aplicadas, y la micro-propuesta co-diseñada. Ver <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a> y <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P1</a>.</p>
     </div>
   </div>
 </div>
@@ -57,19 +57,19 @@ title: Contenidos
   <div class="field-card">
     <span class="step-tag">Entre sesión 2 y 3 · trabajo de campo</span>
     <h3>Fase de aplicación I</h3>
-    <p>Ejecución de la micro-intervención piloto diseñada, en el territorio o con el colectivo elegido: implementación real, documentación de evidencia (fotos, videos, testimonios) y registro de listas de asistencia. Este trabajo alimenta directamente el Semáforo Intercultural de la sesión 3.</p>
+    <p>Ejecución de la micro-intervención piloto diseñada, en el territorio o con el colectivo elegido: implementación real, documentación de evidencia (fotos, videos, testimonios) y registro de listas de asistencia. Este trabajo alimenta directamente el Reporte de Campo y Evidencias del Laboratorio de Avances de la sesión 3.</p>
   </div>
 </div>
 
 <div class="route-step" id="s3" data-step="3">
   <div class="unit-card">
     <span class="step-tag">Sesión 3 · {{ s[2].fecha }}</span>
-    <h3>🚦 Avances y semáforo intercultural</h3>
+    <h3>🚦 Laboratorio de avances y reajuste colaborativo</h3>
     <p><strong>Temas del microcurrículo:</strong> avances en la salud intercultural en salud pública · experiencias en América Latina · experiencias en Colombia y el mundo.</p>
-    <p><strong>Objetivo:</strong> analizar críticamente experiencias interculturales comparadas, usando el semáforo intercultural, para refinar el piloto propio antes de su cierre.</p>
+    <p><strong>Objetivo:</strong> analizar críticamente la experiencia directa de campo — tensiones epistémicas, barreras institucionales y relaciones de poder — para reajustar el piloto propio antes de su cierre.</p>
     <div class="update-block" style="margin-top:14px;">
-      <h3>🎯 Entrega 2 — P2: Semáforo Intercultural, trabajo en clase (30%)</h3>
-      <p style="margin-bottom:0;">Análisis de 3 experiencias interculturales (propia o de referencia) con clasificación crítica 🔴🟡🟢 y refinamiento de la micro-propuesta. Se trabaja en clase con la <a href="{{ '/herramientas/semaforo.html' | relative_url }}">herramienta interactiva del Semáforo</a>. Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P2</a>.</p>
+      <h3>🎯 Entrega 2 — P2: Laboratorio de Avances y Reajuste Colaborativo (30%)</h3>
+      <p style="margin-bottom:0;">Matriz de Avance Colaborativo (reporte de campo y evidencias, mapeo de tensiones y relaciones de poder, plan de reajuste y cierre) + taller reflexivo en clase. Como apoyo opcional para el mapeo de tensiones pueden usar la <a href="{{ '/herramientas/semaforo.html' | relative_url }}">herramienta interactiva del Semáforo</a>. Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P2</a>.</p>
     </div>
   </div>
 </div>
@@ -78,7 +78,7 @@ title: Contenidos
   <div class="field-card">
     <span class="step-tag">Entre sesión 3 y 4 · trabajo de campo</span>
     <h3>Fase de aplicación II</h3>
-    <p>Continuación y cierre de la micro-intervención a la luz del refinamiento hecho con el semáforo: se documenta evidencia adicional y se recopila retroalimentación directa de la comunidad, insumo central para la entrega final.</p>
+    <p>Continuación y cierre de la micro-intervención a la luz del plan de reajuste acordado en el Laboratorio de la sesión 3: se documenta evidencia adicional y se recopila retroalimentación directa de la comunidad, insumo central para la devolución y valoración comunitaria de la entrega final.</p>
   </div>
 </div>
 
@@ -89,8 +89,8 @@ title: Contenidos
     <p><strong>Temas del microcurrículo:</strong> retos contemporáneos de la salud intercultural en salud pública · dificultades y desafíos · debates contemporáneos.</p>
     <p><strong>Objetivo:</strong> presentar la recopilación completa del proceso y debatir críticamente la experiencia — no si la intervención "funcionó", sino si logró transformar relaciones de poder o solo adaptó la biomedicina sin cederlo.</p>
     <div class="update-block" style="margin-top:14px;">
-      <h3>🎯 Entrega 3 — P3: Entrega final del proceso intercultural (40%)</h3>
-      <p style="margin-bottom:0;">Recopilación completa del trabajo de micro-intervención: ejecución, documentación integral, evaluación participativa con la comunidad y análisis crítico decolonial, cerrado con un debate en clase: <em>¿intervención funcional o crítica?</em> Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P3</a>.</p>
+      <h3>🎯 Entrega 3 — P3: Muestra de la Micro-Intervención y Debate Crítico (40%)</h3>
+      <p style="margin-bottom:0;">Muestra tangible del producto co-diseñado, evidencia real de la devolución y valoración comunitaria (testimonios y retroalimentación directa), y fundamentación teórica con Walsh y Basail, cerrada con un debate en clase: <em>¿intervención funcional o crítica?</em> Ver <a href="{{ '/rubricas.html' | relative_url }}">Rúbrica SOLO — P3</a>.</p>
     </div>
   </div>
 </div>

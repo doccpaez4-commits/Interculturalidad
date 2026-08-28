@@ -67,5 +67,5 @@ Esta electiva profundiza en la relación entre salud pública e interculturalida
 </ul>
 
 <div class="callout">
-  <strong>Un curso para practicar, no solo para leer.</strong> En 4 sesiones intensivas, cada grupo trabaja con una familia, comunidad o colectivo real en tres entregas: Diagnóstico y Micro-Propuesta (P1), Semáforo Intercultural (P2) y Entrega final del proceso (P3). Ver <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a>.
+  <strong>Un curso para practicar, no solo para leer.</strong> En 4 sesiones intensivas, cada grupo trabaja con una familia, comunidad o colectivo real en tres entregas: Protocolo Ético y Diagnóstico Participativo (P1), Laboratorio de Avances y Reajuste Colaborativo (P2) y Muestra de la Micro-Intervención y Debate Crítico (P3). Ver <a href="{{ '/proyecto.html' | relative_url }}">Proyecto de aula</a>.
 </div>
