@@ -58,6 +58,27 @@ Esta electiva profundiza en la relación entre salud pública e interculturalida
   <strong>📖 Lectura de apertura sugerida.</strong> Menéndez, E. L. (2003). <em>Modelos de atención de los padecimientos: de exclusiones teóricas y articulaciones prácticas.</em> Ciência &amp; Saúde Coletiva, 8(1), 185-207. Introduce el concepto de "modelo médico hegemónico" y muestra cómo, aunque la biomedicina excluye teóricamente los saberes populares y tradicionales, en la práctica cotidiana (la autoatención) las personas articulan varios modelos de cuidado a la vez. Es un buen punto de partida para el curso: nombra justo la tensión entre saberes que la micro-intervención piloto busca reconocer y, cuando es posible, tender puentes sobre ella. Ver referencia completa en <a href="{{ '/bibliografia.html' | relative_url }}">Bibliografía</a>.
 </div>
 
+## 🎬 Videos para la reflexión
+
+<p class="lede" style="margin-top:-6px;">Obsérvenlos antes de la sesión correspondiente y traigan una reflexión breve para compartir en clase.</p>
+
+<div class="video-grid">
+  <div class="video-card">
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/hp60QAeZync" title="¿Quién va a cantar? - Rubén Rada (con Mex Urtizberea) | Sesiones ¡FA!" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <h4>¿Quién va a cantar? — Rubén Rada (Sesiones ¡FA!)</h4>
+    <p>Reflexionen: ¿qué saberes, memoria y expresiones identitarias transmite este tipo de tradición oral y musical, y cómo dialogan —o entran en tensión— con los modelos hegemónicos de salud y bienestar?</p>
+  </div>
+  <div class="video-card">
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/vkcFEQE9pa4" title="Náhuatl. Cuando muere una lengua. Poema en lengua náhuatl" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <h4>Náhuatl. Cuando muere una lengua — INPI México</h4>
+    <p>Reflexionen: ¿qué se pierde en salud pública cuando se pierde una lengua o un saber cultural, y cómo se relaciona esto con la pérdida de conocimientos culturales que puede motivar su propia micro-intervención?</p>
+  </div>
+</div>
+
 ## 🔍 Núcleo problémico
 
 <ul class="icon-list">
